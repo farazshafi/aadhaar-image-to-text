@@ -1,0 +1,28 @@
+{
+  "name": "aadhaar-image-to-text",
+  "version": "1.0.2",
+  "description": "Extract text and common fields from front and back Aadhaar card images in Node.js.",
+  "type": "module",
+  "main": "./src/index.js",
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "files": [
+    "src/",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test",
+    "pack:check": "npm pack --dry-run"
+  },
+  "keywords": ["aadhaar", "ocr", "tesseract", "image-to-text"],
+  "license": "MIT",
+  "dependencies": {
+    "sharp": "^0.35.5",
+    "tesseract.js": "^7.0.0"
+  }
+}
